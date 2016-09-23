@@ -10,3 +10,8 @@ be rails g scaffold task title completed order
 
 # Create a Serializer
 be rails g serializer task title completed order
+
+send a request to API: 
+curl -v -H 'Content-Type: application/json' -H 'Accept: application/json' -X POST -d "'task':{'title':'something to do','order':'1','completed':'false'}" http://localhost:3000/tasks
+
+
